@@ -43,10 +43,16 @@ I build practical services, desktop/plugin tools, and home infrastructure. My co
 
 ## GitHub Signals
 
-<p align="center">
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=krotname&show_icons=true&hide_border=true&theme=github_dark&rank_icon=github" />
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=krotname&layout=compact&hide_border=true&theme=github_dark&langs_count=8" />
-</p>
+Last 12 months, rounded from GitHub contribution totals.
+
+```mermaid
+pie showData
+    title GitHub activity
+    "Commits 72%" : 72
+    "Pull requests 16%" : 16
+    "Code review 10%" : 10
+    "Issues 2%" : 2
+```
 
 ## Contacts
 
