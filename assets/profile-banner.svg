@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">krotname profile banner</title>
+  <desc id="desc">A calm developer profile banner for Java, tools, and infrastructure work.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="52%" stop-color="#102033"/>
+      <stop offset="100%" stop-color="#151a24"/>
+    </linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+    <pattern id="grid" width="42" height="42" patternUnits="userSpaceOnUse">
+      <path d="M 42 0 L 0 0 0 42" fill="none" stroke="#ffffff" stroke-opacity="0.045" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.34"/>
+    </filter>
+  </defs>
+
+  <rect width="1280" height="360" rx="0" fill="url(#bg)"/>
+  <rect width="1280" height="360" fill="url(#grid)"/>
+  <path d="M0 298 C170 260 275 338 430 296 C590 252 680 214 820 250 C1005 300 1086 202 1280 232 L1280 360 L0 360 Z" fill="#38bdf8" opacity="0.08"/>
+  <path d="M0 328 C180 286 292 348 452 310 C626 268 708 262 872 292 C1038 322 1124 278 1280 286" fill="none" stroke="url(#line)" stroke-width="4" opacity="0.9"/>
+
+  <g filter="url(#shadow)">
+    <rect x="76" y="74" width="455" height="212" rx="18" fill="#0b1220" stroke="#223047"/>
+    <rect x="76" y="74" width="455" height="42" rx="18" fill="#111827"/>
+    <circle cx="110" cy="95" r="6" fill="#ef4444"/>
+    <circle cx="132" cy="95" r="6" fill="#f59e0b"/>
+    <circle cx="154" cy="95" r="6" fill="#22c55e"/>
+    <text x="110" y="154" fill="#94a3b8" font-family="Consolas, 'Cascadia Mono', monospace" font-size="22">$ build --quality-gates</text>
+    <text x="110" y="194" fill="#e2e8f0" font-family="Consolas, 'Cascadia Mono', monospace" font-size="22">tests: pass</text>
+    <text x="110" y="234" fill="#e2e8f0" font-family="Consolas, 'Cascadia Mono', monospace" font-size="22">release: reproducible</text>
+  </g>
+
+  <g>
+    <text x="600" y="138" fill="#f8fafc" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="66" font-weight="700">krotname</text>
+    <text x="604" y="188" fill="#cbd5e1" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="27">Java developer / tools / infrastructure</text>
+    <rect x="604" y="222" width="118" height="34" rx="17" fill="#38bdf8" fill-opacity="0.15" stroke="#38bdf8" stroke-opacity="0.55"/>
+    <rect x="738" y="222" width="114" height="34" rx="17" fill="#34d399" fill-opacity="0.14" stroke="#34d399" stroke-opacity="0.55"/>
+    <rect x="868" y="222" width="91" height="34" rx="17" fill="#f59e0b" fill-opacity="0.14" stroke="#f59e0b" stroke-opacity="0.55"/>
+    <text x="631" y="245" fill="#e0f2fe" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" font-weight="600">Java 21</text>
+    <text x="764" y="245" fill="#dcfce7" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" font-weight="600">CI/CD</text>
+    <text x="892" y="245" fill="#fef3c7" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="16" font-weight="600">Ops</text>
+  </g>
+</svg>
