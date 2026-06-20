@@ -36,7 +36,8 @@
 | [IdeaMarkdownTableEditor](https://github.com/krotname/IdeaMarkdownTableEditor) | JetBrains IDE plugin with shared Markdown table formatting logic and CI. |
 | [CompanyStatusChecker](https://github.com/krotname/CompanyStatusChecker) | Java 21 service for checking Russian company status via DaData, with OpenAPI, Docker and quality gates. |
 | [JavaSoundRecorder](https://github.com/krotname/JavaSoundRecorder) | Swing desktop recorder with Dropbox upload, tests, CI and release artifacts. |
-| [SmartLinks](https://github.com/krotname/SmartLinks) | Spring Boot URL shortener with Redis routing rules, Docker/K8s manifests and OpenAPI. |
+| [JavaNetworkChat](https://github.com/krotname/JavaNetworkChat) | Java 21 TCP chat with Swing GUI, JSON protocol, release bundle, and quality gates. |
+| [TelegramResenderBot](https://github.com/krotname/TelegramResenderBot) | Telegram bot for whitelist-based routing, with Docker runtime, tests, and pinned dependency locks. |
 | [HomeFrigateOllamaIaC](https://github.com/krotname/HomeFrigateOllamaIaC) | Hyper-V and Ansible IaC for a home Frigate + Ollama GPU video AI stack. |
 
 ## GitHub Signals
