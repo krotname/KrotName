@@ -12,9 +12,7 @@
   <img alt="Focus" src="https://img.shields.io/badge/focus-Java%20%7C%20tools%20%7C%20automation-f59e0b?style=flat-square">
 </p>
 
-
-I build practical services, desktop/plugin tools, and home infrastructure. My core stack is Java 21, Spring Boot, C++, Python, and PowerShell. In public repositories I keep README files, tests, CI, CodeQL, Dependabot, and reproducible releases.
-
+ 
 ## Focus
 
 - Java backend and desktop tooling: Spring Boot, Swing, Gradle, Maven.
