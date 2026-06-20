@@ -13,6 +13,24 @@ ROOT = Path(__file__).resolve().parents[1]
 LOGIN = os.getenv("GITHUB_LOGIN", "krotname")
 START_MARKER = "<!-- ACTIVITY-MIX:START -->"
 END_MARKER = "<!-- ACTIVITY-MIX:END -->"
+METRIC_LABELS = {
+    "commits": {
+        "en": "Commits",
+        "ru": "Коммиты",
+    },
+    "pull_requests": {
+        "en": "Pull requests",
+        "ru": "Пул-реквесты",
+    },
+    "code_review": {
+        "en": "Code review",
+        "ru": "Ревью кода",
+    },
+    "issues": {
+        "en": "Issues",
+        "ru": "Задачи",
+    },
+}
 
 
 def github_graphql(query: str, variables: dict[str, str]) -> dict:
@@ -65,10 +83,10 @@ def contribution_counts() -> tuple[dict[str, int], dt.date, dt.date]:
     )
     collection = data["user"]["contributionsCollection"]
     counts = {
-        "Commits": collection["totalCommitContributions"],
-        "Pull requests": collection["totalPullRequestContributions"],
-        "Code review": collection["totalPullRequestReviewContributions"],
-        "Issues": collection["totalIssueContributions"],
+        "commits": collection["totalCommitContributions"],
+        "pull_requests": collection["totalPullRequestContributions"],
+        "code_review": collection["totalPullRequestReviewContributions"],
+        "issues": collection["totalIssueContributions"],
     }
     return counts, start, end
 
@@ -89,15 +107,23 @@ def rounded_percentages(counts: dict[str, int]) -> dict[str, int]:
     return percentages
 
 
-def mermaid_block(intro: str, percentages: dict[str, int]) -> str:
+def mermaid_block(
+    intro: str,
+    chart_title: str,
+    percentages: dict[str, int],
+    language: str,
+) -> str:
     lines = [
         intro,
         "",
         "```mermaid",
         "pie showData",
-        "    title GitHub activity",
+        f"    title {chart_title}",
     ]
-    lines.extend(f'    "{name} {value}%" : {value}' for name, value in percentages.items())
+    lines.extend(
+        f'    "{METRIC_LABELS[name][language]} {value}%" : {value}'
+        for name, value in percentages.items()
+    )
     lines.append("```")
     return "\n".join(lines)
 
@@ -124,16 +150,20 @@ def main() -> None:
         ROOT / "README.md",
         mermaid_block(
             f"Последние 12 месяцев ({start.isoformat()} - {end.isoformat()}), "
-            f"GitHub contribution totals: {total}.",
+            f"всего вкладов в GitHub: {total}.",
+            "Активность GitHub",
             percentages,
+            "ru",
         ),
     )
     replace_marked_block(
         ROOT / "README.en.md",
         mermaid_block(
             f"Last 12 months ({start.isoformat()} - {end.isoformat()}), "
-            f"GitHub contribution totals: {total}.",
+            f"total GitHub contributions: {total}.",
+            "GitHub activity",
             percentages,
+            "en",
         ),
     )
 

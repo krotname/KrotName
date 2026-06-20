@@ -44,7 +44,7 @@ I build practical services, desktop/plugin tools, and home infrastructure. My co
 ## GitHub Signals
 
 <!-- ACTIVITY-MIX:START -->
-Last 12 months (2025-06-20 - 2026-06-20), GitHub contribution totals: 137.
+Last 12 months (2025-06-20 - 2026-06-20), total GitHub contributions: 135.
 
 ```mermaid
 pie showData

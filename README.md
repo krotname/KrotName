@@ -44,15 +44,15 @@
 ## GitHub Signals
 
 <!-- ACTIVITY-MIX:START -->
-Последние 12 месяцев (2025-06-20 - 2026-06-20), GitHub contribution totals: 137.
+Последние 12 месяцев (2025-06-20 - 2026-06-20), всего вкладов в GitHub: 135.
 
 ```mermaid
 pie showData
-    title GitHub activity
-    "Commits 72%" : 72
-    "Pull requests 17%" : 17
-    "Code review 10%" : 10
-    "Issues 1%" : 1
+    title Активность GitHub
+    "Коммиты 72%" : 72
+    "Пул-реквесты 17%" : 17
+    "Ревью кода 10%" : 10
+    "Задачи 1%" : 1
 ```
 <!-- ACTIVITY-MIX:END -->
 
