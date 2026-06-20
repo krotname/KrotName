@@ -12,9 +12,6 @@
   <img alt="Focus" src="https://img.shields.io/badge/focus-Java%20%7C%20tools%20%7C%20automation-f59e0b?style=flat-square">
 </p>
 
-
-Пишу практичные сервисы, desktop/plugin-инструменты и домашнюю инфраструктуру. Основной стек: Java 21, Spring Boot, C++, Python и PowerShell. В публичных репозиториях держу README, тесты, CI, CodeQL, Dependabot и воспроизводимые релизы.
-
 ## Фокус
 
 - Java backend и desktop tooling: Spring Boot, Swing, Gradle, Maven.
