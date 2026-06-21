@@ -43,14 +43,14 @@
 ## GitHub Signals
 
 <!-- ACTIVITY-MIX:START -->
-Last 12 months (2025-06-21 - 2026-06-21), total GitHub contributions: 518.
+Last 12 months (2025-06-21 - 2026-06-21), total GitHub contributions: 840.
 
 ```mermaid
 pie showData
     title GitHub activity
-    "Commits 61%" : 61
-    "Pull requests 36%" : 36
-    "Code review 3%" : 3
+    "Commits 58%" : 58
+    "Pull requests 40%" : 40
+    "Code review 2%" : 2
     "Issues 0%" : 0
 ```
 <!-- ACTIVITY-MIX:END -->
