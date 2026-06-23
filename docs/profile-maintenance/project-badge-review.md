@@ -1,0 +1,13 @@
+# Project Badge Review
+
+Use this note before adding, removing, or restyling profile badges.
+
+## Maintenance Checks
+
+- Prefer badges that reflect current maintained capabilities.
+- Avoid duplicating the same signal in nearby text.
+- Verify linked badge targets still resolve correctly.
+
+## Validation
+
+Review the profile README after applying this note. The profile should stay concise, bilingual where needed, and aligned with the current public repository set.
