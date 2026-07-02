@@ -59,7 +59,9 @@ def github_graphql(query: str, variables: dict[str, str]) -> dict:
 
 
 def contribution_counts() -> tuple[dict[str, int], dt.date, dt.date]:
-    end = dt.datetime.now(dt.timezone.utc).date()
+    # The GraphQL API rejects ranges longer than one year, so keep the span
+    # at exactly 365 days instead of expanding both ends to day boundaries.
+    end = dt.datetime.now(dt.timezone.utc)
     start = end - dt.timedelta(days=365)
     query = """
     query($login: String!, $from: DateTime!, $to: DateTime!) {
@@ -77,18 +79,21 @@ def contribution_counts() -> tuple[dict[str, int], dt.date, dt.date]:
         query,
         {
             "login": LOGIN,
-            "from": f"{start.isoformat()}T00:00:00Z",
-            "to": f"{end.isoformat()}T23:59:59Z",
+            "from": start.strftime("%Y-%m-%dT%H:%M:%SZ"),
+            "to": end.strftime("%Y-%m-%dT%H:%M:%SZ"),
         },
     )
-    collection = data["user"]["contributionsCollection"]
+    user = data.get("user")
+    if user is None:
+        raise SystemExit(f"GitHub user not found: {LOGIN}")
+    collection = user["contributionsCollection"]
     counts = {
         "commits": collection["totalCommitContributions"],
         "pull_requests": collection["totalPullRequestContributions"],
         "code_review": collection["totalPullRequestReviewContributions"],
         "issues": collection["totalIssueContributions"],
     }
-    return counts, start, end
+    return counts, start.date(), end.date()
 
 
 def rounded_percentages(counts: dict[str, int]) -> dict[str, int]:

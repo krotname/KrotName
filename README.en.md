@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/profile-banner.svg" alt="krotname - Java developer, tools, infrastructure" width="100%" />
+  <a href="http://krot.name"><img src="./assets/profile-banner.svg" alt="krotname - Java developer, tools, infrastructure" width="100%" /></a>
 </p>
 
 <h1 align="center">Andrei Ovcharenko / krotname</h1>
@@ -12,7 +12,6 @@
   <img alt="Focus" src="https://img.shields.io/badge/focus-Java%20%7C%20tools%20%7C%20automation-f59e0b?style=flat-square">
 </p>
 
- 
 ## Focus
 
 - Java backend and desktop tooling: Spring Boot, Swing, Gradle, Maven.
