@@ -2,7 +2,6 @@
   <a href="http://krot.name"><img src="./assets/profile-banner.svg" alt="krotname - Java developer, tools, infrastructure" width="100%" /></a>
 </p>
 
-<h1 align="center">Andrei Ovcharenko / krotname</h1>
 
 [Russian](README.md)
 
