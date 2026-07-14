@@ -1,11 +1,11 @@
 <p align="center">
-  <a href="http://krot.name"><img src="./assets/profile-banner.svg" alt="krotname - Java developer, tools, infrastructure" width="100%" /></a>
+  <a href="https://krot.name"><img src="./assets/profile-banner.svg" alt="krotname - Java developer, tools, infrastructure" width="100%" /></a>
 </p>
 
 [English](README.en.md)
 
 <p align="center">
-  <a href="http://krot.name"><img alt="Website" src="https://img.shields.io/badge/site-krot.name-2563eb?style=flat-square"></a>
+  <a href="https://krot.name"><img alt="Website" src="https://img.shields.io/badge/site-krot.name-2563eb?style=flat-square"></a>
   <a href="https://github.com/krotname?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-public-16a34a?style=flat-square"></a>
   <img alt="Focus" src="https://img.shields.io/badge/focus-Java%20%7C%20tools%20%7C%20automation-f59e0b?style=flat-square">
 </p>
@@ -54,5 +54,5 @@ pie showData
 
 ## Контакты
 
-- Сайт: [krot.name](http://krot.name)
+- Сайт: [krot.name](https://krot.name)
 - GitHub: [@krotname](https://github.com/krotname)
