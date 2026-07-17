@@ -6,6 +6,7 @@
 
 <p align="center">
   <a href="https://krot.name"><img alt="Website" src="https://img.shields.io/badge/site-krot.name-2563eb?style=flat-square"></a>
+  <a href="https://krot.name/profiles/"><img alt="Profiles" src="https://img.shields.io/badge/profiles-verified-8b5cf6?style=flat-square"></a>
   <a href="https://github.com/krotname?tab=repositories"><img alt="Repositories" src="https://img.shields.io/badge/repos-public-16a34a?style=flat-square"></a>
   <img alt="Focus" src="https://img.shields.io/badge/focus-Java%20%7C%20tools%20%7C%20automation-f59e0b?style=flat-square">
 </p>
@@ -55,4 +56,9 @@ pie showData
 ## Контакты
 
 - Сайт: [krot.name](https://krot.name)
+- Реестр профилей: [krot.name/profiles](https://krot.name/profiles/)
 - GitHub: [@krotname](https://github.com/krotname)
+- LinkedIn: [Андрей Овчаренко](https://www.linkedin.com/in/ovcharenko-andrey/)
+- Хабр: [@kreout](https://habr.com/ru/users/kreout/)
+- VK: [Андрей Овчаренко](https://vk.com/andrei.ovcharenko)
+- Telegram: [Java && Management](https://t.me/management_Java)
