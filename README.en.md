@@ -42,7 +42,7 @@
 ## GitHub Signals
 
 <!-- ACTIVITY-MIX:START -->
-Last 12 months (2025-08-31 - 2026-08-31), total GitHub contributions: 5809.
+Last 12 months (2025-09-01 - 2026-09-01), total GitHub contributions: 5809.
 
 ```mermaid
 pie showData
