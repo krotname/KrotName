@@ -23,9 +23,9 @@
 
 | Area | Tools |
 |---|---|
-| Languages | ![Java](https://img.shields.io/badge/Java-21-ef4444?style=flat-square&logo=openjdk&logoColor=white) ![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white) ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white) |
-| Backend | ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white) ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white) ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white) |
-| Quality | ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white) ![CodeQL](https://img.shields.io/badge/CodeQL-1f6feb?style=flat-square&logo=github&logoColor=white) ![Dependabot](https://img.shields.io/badge/Dependabot-025E8C?style=flat-square&logo=dependabot&logoColor=white) ![OpenSSF](https://img.shields.io/badge/OpenSSF-3b82f6?style=flat-square&logo=linuxfoundation&logoColor=white) |
+| Languages | [![Java](https://img.shields.io/badge/Java-21-ef4444?style=flat-square&logo=openjdk&logoColor=white)](https://openjdk.org/) [![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)](https://isocpp.org/) [![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)](https://www.python.org/) [![PowerShell](https://img.shields.io/badge/PowerShell-5391FE?style=flat-square&logo=powershell&logoColor=white)](https://learn.microsoft.com/en-us/powershell/) |
+| Backend | [![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot/) [![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/) [![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)](https://redis.io/) [![Docker](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/) |
+| Quality | [![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)](https://github.com/features/actions) [![CodeQL](https://img.shields.io/badge/CodeQL-1f6feb?style=flat-square&logo=github&logoColor=white)](https://codeql.github.com/) [![Dependabot](https://img.shields.io/badge/Dependabot-025E8C?style=flat-square&logo=dependabot&logoColor=white)](https://docs.github.com/en/code-security/concepts/supply-chain-security/dependabot-security-updates) [![OpenSSF](https://img.shields.io/badge/OpenSSF-3b82f6?style=flat-square&logo=linuxfoundation&logoColor=white)](https://openssf.org/) |
 
 ## Selected Projects
 
@@ -38,21 +38,6 @@
 | [JavaNetworkChat](https://github.com/krotname/JavaNetworkChat) | Java 21 TCP chat with Swing GUI, JSON protocol, release bundle, and quality gates. |
 | [TelegramResenderBot](https://github.com/krotname/TelegramResenderBot) | Telegram bot for whitelist-based routing, with Docker runtime, tests, and pinned dependency locks. |
 | [HomeFrigateOllamaIaC](https://github.com/krotname/HomeFrigateOllamaIaC) | Hyper-V and Ansible IaC for a home Frigate + Ollama GPU video AI stack. |
-
-## GitHub Signals
-
-<!-- ACTIVITY-MIX:START -->
-Last 12 months (2025-09-14 - 2026-09-14), total GitHub contributions: 5874.
-
-```mermaid
-pie showData
-    title GitHub activity
-    "Commits 64%" : 64
-    "Pull requests 34%" : 34
-    "Code review 2%" : 2
-    "Issues 0%" : 0
-```
-<!-- ACTIVITY-MIX:END -->
 
 ## Contacts
 

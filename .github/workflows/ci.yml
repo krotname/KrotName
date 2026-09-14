@@ -21,14 +21,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@9c091bb21b7c1c1d1991bb908d89e4e9dddfe3e0 # v7.0.0
 
-      - name: Compile scripts
-        run: python3 -m compileall scripts
-
-      - name: Dry-run profile metrics update
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GITHUB_LOGIN: krotname
+      - name: Validate profile Markdown
         run: |
-          python3 scripts/update_profile_metrics.py
-          echo "Resulting README changes:"
-          git diff --stat
+          set -euo pipefail
+
+          if grep -Eq 'GitHub Signals|ACTIVITY-MIX|```mermaid|Последние 12 месяцев|Last 12 months' README.md README.en.md; then
+            echo "Removed GitHub activity block is still present."
+            exit 1
+          fi
+
+          for readme in README.md README.en.md; do
+            stack_rows=$(grep -E '^\| (Языки|Backend|Качество|Languages|Quality) \|' "$readme")
+            badge_count=$(printf '%s\n' "$stack_rows" | grep -o '!\[' | wc -l)
+            linked_badge_count=$(printf '%s\n' "$stack_rows" | grep -o '\[!\[' | wc -l)
+            test "$badge_count" -eq 12
+            test "$linked_badge_count" -eq 12
+          done
