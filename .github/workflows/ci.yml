@@ -2,9 +2,61 @@ name: CI
 
 on:
   pull_request:
+    # Documentation and images cannot break a script, manifest or config:
+    # a change made only of these files skips validation entirely.
+    paths-ignore:
+      - '**.md'
+      - '**.mdx'
+      - '**.rst'
+      - '**.adoc'
+      - '**.pdf'
+      - '**.doc'
+      - '**.docx'
+      - '**.odt'
+      - '**.rtf'
+      - '**.ppt'
+      - '**.pptx'
+      - '**.odp'
+      - '**.png'
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.gif'
+      - '**.webp'
+      - '**.avif'
+      - '**.bmp'
+      - '**.tif'
+      - '**.tiff'
+      - '**.ico'
+      - '**.svg'
   push:
     branches:
       - main
+    # Documentation and images cannot break a script, manifest or config:
+    # a change made only of these files skips validation entirely.
+    paths-ignore:
+      - '**.md'
+      - '**.mdx'
+      - '**.rst'
+      - '**.adoc'
+      - '**.pdf'
+      - '**.doc'
+      - '**.docx'
+      - '**.odt'
+      - '**.rtf'
+      - '**.ppt'
+      - '**.pptx'
+      - '**.odp'
+      - '**.png'
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.gif'
+      - '**.webp'
+      - '**.avif'
+      - '**.bmp'
+      - '**.tif'
+      - '**.tiff'
+      - '**.ico'
+      - '**.svg'
 
 permissions:
   contents: read
